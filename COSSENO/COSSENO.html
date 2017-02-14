@@ -1,0 +1,22 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" /> <!-- PARA CORRETA ACENTUAÇÃO -->
+<title>Cosseno de Ângulo</title>
+<script src='funcoescos.js'></script> <!-- DECLARAÇÃO QUE ESTÁ USANDO O ARQUIVO funcoescos.js, QUE TEM QUE ESTAR NA MESMA PASTA DESTE ARQUIVO HTML -->
+Ângulo x (graus decimais):<br> <!-- PULA LINHA -->
+<input type="number" id="angulo" value="0"> <!-- CAIXA DE TEXTO -->
+<br>
+Número de termos do polinômio de Mclaurin:<br>
+<input type="number" id="nvezes" value="0"> <!-- CAIXA DE TEXTO -->
+<br>
+<br>
+<button onclick="fcos()">CALCULAR COSSENO</button> <!-- BOTÃO QUE CHAMA A FUNÇÃO fcos, QUE ESTÁ NO ARQUIVO funcoescos.js-->
+<br>
+<br>
+Cos(x) exato = <ins id="ecos"></ins> <!-- ecos É UMA VARIÁVEL USADA PARA MOSTRAR O RESULTADO -->
+<br>
+<br>
+Cos(x) via Mclaurin = <ins id="mcos"></ins> <!-- mcos É UMA VARIÁVEL USADA PARA MOSTRAR O RESULTADO -->
+<br>
+<br>
+Erro = <ins id="derro"></ins>
+</html>
