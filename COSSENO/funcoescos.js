@@ -1,4 +1,5 @@
 function fcos() { //resolve o cosseno de x
+
 ang = document.getElementById("angulo").value; //lê o ângulo em graus
 ang=Number(ang); //para garantir que é número
 
@@ -11,7 +12,7 @@ document.getElementById("ecos").innerHTML = cos; //mostrando o cos em html
 n = document.getElementById("nvezes").value; //lê o numero de termos
 n=n-1; //para considerar o termo 0
 m=0; //m é cada termo do polinômio
-for (i-0; i <= n; i++ { //para i de 0 a n, somando 1 em 1
+for (i=0; i <= n; i++) { //para i de 0 a n, somando 1 em 1
 m=m+((Math.pow(-1,i))*((Math.pow(angr,2*i))/(fatorial(2*i))));
 }
 document.getElementById("mcos").innerHTML = m; //mostrando o valor final
