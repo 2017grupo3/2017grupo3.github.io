@@ -43,9 +43,9 @@ sistema(n,b,a); //chama a função que calcula o sistema triangular superior
 //imprimir os resultados xi
 res='';
 for (i=1;i<=n;i++){
-res=res+'\r\nx'+i+'\r\n='+x[i]+'<br>'
+res=res+'\r\nx'+i+'\r\n='+x[i].toFixed(3)+'<br>'
 }
-document.getElementById('resultado').innerHTML = res.toFixed(3);
+document.getElementById('resultado').innerHTML = res;
 }
 
 
