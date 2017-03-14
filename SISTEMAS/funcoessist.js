@@ -45,13 +45,15 @@ res='';
 for (i=1;i<=n;i++){
 res=res+'\r\nx'+i+'\r\n='+x[i]+'<br>'
 }
-document.getElementById('resultado').innerHTML = res;
+document.getElementById('resultado').innerHTML = res.toFixed(3);
 }
+
+
 function sistema(n,b,a){ //AQUI ENTRA O ALGORITMO DOS ALUNOS
 m=[];
 x=[];//entra n, b e a. Sai x.
 for (k=1;k<=n-1;k++) { //para cada coluna (a última de “a” e a coluna “b” não entram) //Encontrar o pivô (o maior em módulo)
-w=Math.abs(a[k,k]) //w é o pivô
+w=Math.abs(a[k+','+k]) //w é o pivô
 r=k //r é o nº da linha que está o pivô
 for (j=k;j<=n;j++) { //para cada linha menos as anteriores a “k”, já escalonadas
 if (Math.abs(a[j+','+k])>w) {
