@@ -20,6 +20,8 @@ html+='</tr>';
 html+='</table>';
 document.getElementById('tabela').innerHTML=html;
 }
+
+
 function calcular(){
 n=document.getElementById("ordem").value;
 n=Number(n);
@@ -43,10 +45,12 @@ sistemasuperior(n,b,a); //chama a função que calcula o sistema triangular supe
 //imprimir os resultados xi
 res='';
 for (i=1;i<=n;i++){
-res=res+'\r\nx'+i+'\r\n='+x[i]+'<br>'
+res=res+'\r\nx'+i+'\r\n='+x[i].toFixed(3)+'<br>'
 }
 document.getElementById('resultado').innerHTML = res;
 }
+
+
 function sistemasuperior(n,b,a){ //AQUI ENTRA O ALGORITMO DOS ALUNOS
 x=[];//entra n, b e a. Sai x.
 x[n]=b[n]/a[n+','+n]

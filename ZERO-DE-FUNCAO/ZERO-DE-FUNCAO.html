@@ -1,0 +1,45 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/> <!-- PARA CORRETA ACENTUAÇÃO -->
+<title>Raíz de Função por Dicotomia</title>
+<script type="text/javascript" src='funcoeszerodicotomia.js' CHARSET="utf-8"></script> <!-- CHARSET PARA CORRETA ACENTUAÇÃO -->
+<!-- ARQUIVOS NECESSÁRIOS PARA EXIBIÇÃO DO GRÁFICO, DEVEM ESTAR NA PASTA "FUNCOES-GRAFICO"-->
+    <link class="include" rel="stylesheet" type="text/css" href="FUNCOES-GRAFICO/jquery.jqplot.min.css"/>
+    <script class="include" type="text/javascript" src="FUNCOES-GRAFICO/jquery.min.js"></script>
+    <script class="include" type="text/javascript" src="FUNCOES-GRAFICO/jquery.jqplot.min.js"></script>
+    <script class="include" type="text/javascript" src="FUNCOES-GRAFICO/jqplot.canvasTextRenderer.min.js"></script>
+RAIZ DE FUNÇÃO PELO MÉTODO DA DICOTOMIA
+<br><br>
+FUNÇÃO f(x):
+<br>
+<input type="text" id="ef" value="0">
+<button onclick="ajuda()">AJUDA</button>
+<button onclick="testar()">TESTAR f em x = </button>
+<input type="number" id="ex" value="0">
+<br><br>
+extremo a do intervalo [a,b]:
+<br>
+<input type="number" id="ea" value="0">
+<br><br>
+extremo b do intervalo [a,b]:
+<br>
+<input type="number" id="eb" value="0">
+<br><br>
+erro alvo:
+<br>
+<input type="number" id="eea" value="0">
+<br><br>
+número máximo de iterações:
+<br>
+<input type="number" id="eitm" value="0">
+<br>
+<br>
+<button id="bcalcular" onclick="calcular()">CALCULAR</button>
+<br><br>
+<ins id="resultado"></ins> <!-- IMPRESSÃO DOS RESULTADOS, DE ACORDO COM A FUNÇÃO calcular() no arquivo .js -->
+<br><br>
+    <style>
+        .chart { height:300px; width:500px; } <!-- TAMANHO DO GRÁFICO-->
+    </style>
+<div id="grafico" class="chart"></div>
+</html>
+
